@@ -8,7 +8,7 @@ class CompleteReport(SimpleReport):
         quantity_of_products_per_company = cls.get_products_per_company(data)
         complete_report = ""
         for company, quantity in quantity_of_products_per_company.items():
-            complete_report += f" - {company}: {quantity}\n"
+            complete_report += f"- {company}: {quantity}\n"
 
         return (
             f"{simple_report}\n"
